@@ -1,0 +1,152 @@
+/*blue: #164B77
+red: #B81818
+violet: #660066*/
+
+html, body {
+	font-size: 62.5%;
+}
+
+header, main {
+	font-size: 1.6rem;
+}
+
+footer {
+	font-size: 1.4rem;
+}
+
+p {
+	margin: 0;
+}
+
+nav {
+	box-sizing: border-box;
+	font-size: 1em;
+	width: 100%;
+	height: 80px;
+	background-color: #660066;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+	
+	nav a#logo {
+		float: left;
+		margin-left: 20px
+	}
+
+	nav ul {
+		width: 100%;
+	}
+
+main {
+	padding-bottom: 80px;
+}
+
+.slider {
+	display: block;
+	overflow: hidden;
+}
+	.slider-item {
+		width: 100%;
+	}
+
+.cS-hidden {
+    height: 1px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    overflow: hidden;
+}
+
+.lSSlideWrapper, .lSSlideWrapper .lSSlide {
+	height: 80vh !important;
+}
+
+.lSSlideWrapper .lSSlide {
+	list-style: none;
+}
+
+.lgv_featureboxes {
+	display: block;
+	margin-top: 40px;
+}
+
+.lgv_featurebox {
+	box-shadow:0 1px 2px #aaa;
+	/*height: 300px;*/
+	padding: 2rem;
+	border-radius:3px;
+}
+	.lgv_featurebox-list {
+		list-style: none;
+	}
+
+	@media (max-width: 850px) and (min-width: 550px) {
+		.lgv_featurebox-header {
+			font-size: 2em;
+		}	
+	}
+	
+	.lgv_featurebox-header {
+		display: block;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+	}
+
+	.lgv_featurebox-item {
+	}
+
+footer {
+	background-color: silver;
+	height: 240px;
+	padding-top: 40px;
+}
+	.sitemap_links {
+		display: inline-block;
+		width: 30%;
+		line-height: 1.5em;
+		margin: 2px 2.5%;
+	}
+
+@media screen and (min-width: 320px) {
+	nav ul {
+		display: none;
+		height: auto;
+	}
+
+	nav ul li {
+		display: block;
+		width: 100%;
+		float: left;
+		padding: 10px;
+	}
+
+	nav ul li a {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	nav a#pull {
+		display: block;
+		float: right;
+		margin-right: 20px;
+	}
+}
+
+@media screen and (min-width: 769px) {
+
+	nav ul {
+		display: block;
+	}
+
+	nav ul li {
+		display: inline-block;
+		width: 10%;
+		position: relative;
+		float: right;
+	}
+
+	nav a#pull {
+		display: none;
+	}
+}
