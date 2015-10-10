@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Loyola Grand Villas</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- LightSlider -->
+		<link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+		<script src="js/lightslider.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<header>
+			<nav class="clearfix">
+				<a href="#" id="logo">Logo</a>
+				<a href="#links" id="pull"><i class="fa fa-bars fa-2x"></i></a>
+		    <ul class="clearfix" id="links">
+		        <li><a href="#">How-to</a></li>
+		        <li><a href="#">Icons</a></li>
+		        <li><a href="#">Design</a></li>
+		        <li><a href="#">Web 2.0</a></li>
+		    </ul>
+			</nav>
+		</header>
+		<main class="container">
+			<h1>List of Items</h1>
+			<div class="row">
+				<div class="eleven columns lgv_boxlistitem">
+					<img src="img/fff.png" width="50%" height="auto">
+					<article>
+						<h2>List Item 1</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae libero non massa commodo fringilla id et nulla. Integer vulputate fringilla pharetra. Sed ligula risus, aliquet vitae fringilla ac, commodo eu mi. Curabitur sit amet nulla rutrum, fermentum neque sed, pretium dolor. Praesent rutrum bibendum metus, vitae rutrum sem ultricies id. Morbi libero risus, fermentum at erat ac, interdum gravida elit. </p>
+					</article>
+				</div>
+			</div>
+			<div class="row">
+				<div class="eleven columns lgv_boxlistitem">
+					<img src="img/fff.png" width="50%" height="auto">
+					<article>
+						<h2>List Item 1</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae libero non massa commodo fringilla id et nulla. Integer vulputate fringilla pharetra. Sed ligula risus, aliquet vitae fringilla ac, commodo eu mi. Curabitur sit amet nulla rutrum, fermentum neque sed, pretium dolor. Praesent rutrum bibendum metus, vitae rutrum sem ultricies id. Morbi libero risus, fermentum at erat ac, interdum gravida elit. </p>
+					</article>
+				</div>
+			</div>
+			<div class="row">
+				<div class="eleven columns lgv_boxlistitem">
+					<img src="img/fff.png" width="50%" height="auto">
+					<article>
+						<h2>List Item 1</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae libero non massa commodo fringilla id et nulla. Integer vulputate fringilla pharetra. Sed ligula risus, aliquet vitae fringilla ac, commodo eu mi. Curabitur sit amet nulla rutrum, fermentum neque sed, pretium dolor. Praesent rutrum bibendum metus, vitae rutrum sem ultricies id. Morbi libero risus, fermentum at erat ac, interdum gravida elit. </p>
+					</article>
+				</div>
+			</div>
+			<div class="row">
+				<div class="eleven columns lgv_boxlistitem">
+					<img src="img/fff.png" width="50%" height="auto">
+					<article>
+						<h2>List Item 1</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae libero non massa commodo fringilla id et nulla. Integer vulputate fringilla pharetra. Sed ligula risus, aliquet vitae fringilla ac, commodo eu mi. Curabitur sit amet nulla rutrum, fermentum neque sed, pretium dolor. Praesent rutrum bibendum metus, vitae rutrum sem ultricies id. Morbi libero risus, fermentum at erat ac, interdum gravida elit. </p>
+					</article>
+				</div>
+			</div>
+			<div class="row">
+				<div class="eleven columns lgv_boxlistitem">
+					<img src="img/fff.png" width="50%" height="auto">
+					<article>
+						<h2>List Item 1</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae libero non massa commodo fringilla id et nulla. Integer vulputate fringilla pharetra. Sed ligula risus, aliquet vitae fringilla ac, commodo eu mi. Curabitur sit amet nulla rutrum, fermentum neque sed, pretium dolor. Praesent rutrum bibendum metus, vitae rutrum sem ultricies id. Morbi libero risus, fermentum at erat ac, interdum gravida elit. </p>
+					</article>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="row">
+						<div class="four columns">
+							<h4>
+								Sitemap
+							</h4>
+							<div class="row">
+								<p class="sitemap_links">Facilities</p>
+								<p class="sitemap_links">Brokers</p>
+								<p class="sitemap_links">Listings</p>
+								<p class="sitemap_links">Members</p>
+							</div>
+						</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			$(function() {
+			    var pull        = $('#pull');
+			        menu        = $('nav ul');
+			        menuHeight  = menu.height();
+			 
+			    $(pull).on('click', function(e) {
+			        e.preventDefault();
+			        menu.slideToggle();
+			    });
+			});
+			$(window).resize(function(){
+			    var w = $(window).width();
+			    if(w > 320 && menu.is(':hidden')) {
+			        menu.removeAttr('style');
+			    }
+			}); 
+		</script>
+	</body>
+</html>
