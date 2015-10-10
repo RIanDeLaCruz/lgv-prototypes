@@ -56,6 +56,10 @@ main {
 	padding-bottom: 80px !important;
 }
 
+.container h1 {
+	padding-top: 40px;
+}
+
 .slider {
 	display: block;
 	overflow: hidden;
