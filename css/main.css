@@ -100,9 +100,9 @@ main {
 		padding-top: 20px;
 	}
 
-.lgv_recentEventsList h2 {
-	display: none;
-}
+	.lgv_recentEventsList h2 {
+		display: none;
+	}
 	
 	a.read_more {
 		display: inline-block;
@@ -190,10 +190,21 @@ main {
 		float: right;
 		width: 40%;
 		height: 100%;
-		padding: 20px 30px 40px;
+		padding: 20px 30px;
 		border-top:none;
 	}
-		
+		.lgv_recentEventsList h2 {
+			display: block;
+		}
+
+		.lgv_recentEventsList li {
+			height: 100px;
+		}
+
+		.lgv_recentEventsList li:first-child {
+			border-top: none;
+			padding-top: 0px;
+		}
 
 	.lgv_links {
 		display: block;
