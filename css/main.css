@@ -90,6 +90,17 @@ main {
 }
 
 .lgv_recentEventsList {
+	width: 100%;
+	height: 100%;
+	padding: 20px 30px 40px;
+}
+
+	.lgv_recentEventsList li:first-child {
+		border-top: inset 1px silver;
+		padding-top: 20px;
+	}
+
+.lgv_recentEventsList h2 {
 	display: none;
 }
 	
@@ -110,13 +121,17 @@ main {
 	.lgv_recentEventsList li {
 		display: block;
 		position: relative;
-		height: 100px;
+		height: 120px;
 		margin-bottom: 20px;
 		border-bottom: inset 1px silver;
 	}
 
 	.lgv_recentEventsList li:last-child {
 		border-bottom: none;
+	}
+
+	.lgv_recentEventsList a:hover {
+		color: black;
 	}
 
 .lgv_links__ads {
@@ -176,14 +191,9 @@ main {
 		width: 40%;
 		height: 100%;
 		padding: 20px 30px 40px;
+		border-top:none;
 	}
-		.lgv_recentEventsList a {
-			color: black;
-		}
-
-		.lgv_recentEventsList a:hover {
-			color: blue;
-		}
+		
 
 	.lgv_links {
 		display: block;
