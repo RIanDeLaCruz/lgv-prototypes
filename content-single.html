@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Loyola Grand Villas</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- LightSlider -->
+		<link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+		<script src="js/lightslider.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<header>
+			<nav class="clearfix">
+				<a href="index.html" id="logo">Logo</a>
+				<a href="#links" id="pull"><i class="fa fa-bars fa-2x"></i></a>
+		    <ul class="clearfix" id="links">
+		        <li><a href="list-pages.html"><span>Facilities</span></a></li>
+		        <li><a href="multi-card.html"><span>Brokers</span></a></li>
+		        <li><a href="multi-card.html"><span>Brokers</span></a></li>
+		        <li><a href="list-pages.html"><span>Business Opportunities</span></a></li>
+		        <li><a href="#"><span>Members</span></a></li>
+		    </ul>
+			</nav>
+			<div class="lgv_headerimage" style="width:100%; background-image: url('img/fff.png'); background-size:cover; background-position: center center; height:500px; margin-top:80px;"></div>
+		</header>
+		<main class="container">
+			<article class="lgv_copy">
+				<h1 class="lgv_copy__title">Title</h1>
+				<p class="lgv_copy__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat leo et quam sagittis sodales. Integer eu mauris a urna auctor vulputate. Quisque eget pretium sem. Suspendisse ullamcorper semper commodo. Praesent posuere euismod libero, quis sodales lectus feugiat vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris at arcu est. Duis convallis blandit leo eget lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et varius tellus, quis tincidunt magna. Pellentesque tempus mollis erat sit amet consectetur. Vivamus eget aliquet sem, et sodales lorem. Proin pellentesque molestie pulvinar. Sed vel quam fringilla, pharetra dui at, molestie arcu.
+				</p><br> <p class="lgv_copy__text">
+				Curabitur hendrerit convallis nunc semper elementum. Nulla non purus non justo aliquam tincidunt ut at urna. Duis auctor orci nec rhoncus malesuada. Vestibulum tristique nibh vitae nibh cursus pretium. Fusce dolor dui, ultrices id laoreet eu, dapibus id leo. Mauris aliquam gravida dapibus. Maecenas laoreet posuere augue.
+				</p><br> <p class="lgv_copy__text">
+				Morbi gravida sodales erat in blandit. Curabitur eget ligula ac massa consequat feugiat at nec nisl. Vivamus enim orci, venenatis sed egestas id, tincidunt eu tortor. Aenean non justo vitae ante laoreet cursus. Praesent nisl enim, venenatis quis sem ac, pulvinar varius urna. Etiam iaculis leo quis lobortis consectetur. Donec libero purus, varius non leo eu, consequat varius orci.
+				</p><br> <p class="lgv_copy__text">
+				Cras ac egestas mauris, non dignissim mi. Fusce venenatis rutrum massa, at cursus purus ornare sed. Duis malesuada augue enim, venenatis vulputate lorem lobortis sit amet. Fusce vitae est tempor, efficitur tellus ut, hendrerit nunc. Etiam interdum arcu purus. Sed in nisl cursus arcu fringilla sollicitudin quis a massa. Maecenas sollicitudin iaculis vehicula. Duis erat odio, semper et ipsum eget, hendrerit porta nisi. Sed elementum, libero at condimentum tempus, dui ex aliquet metus, nec congue arcu dui eget dui. Mauris et semper enim, vitae elementum lectus.
+				</p><br> <p class="lgv_copy__text">
+				Maecenas commodo lobortis quam vel finibus. Nam viverra sit amet neque sit amet finibus. Ut vitae eros vitae erat ultrices iaculis eget et libero. Ut sed urna euismod, imperdiet justo a, interdum erat. Proin et suscipit tellus, vel hendrerit nulla. Morbi eget elit condimentum, convallis arcu at, pulvinar ligula. Donec sed metus faucibus, mattis libero non, tincidunt odio. In vel varius lorem. Donec nisi lectus, finibus quis sodales ut, scelerisque nec diam. Mauris metus sem, vestibulum ut metus sed, blandit dictum odio.</p>
+			</article>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="row">
+						<div class="four columns">
+							<h4>
+								Sitemap
+							</h4>
+							<div class="row">
+								<p class="sitemap_links">Facilities</p>
+								<p class="sitemap_links">Brokers</p>
+								<p class="sitemap_links">Listings</p>
+								<p class="sitemap_links">Members</p>
+							</div>
+						</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			$(function() {
+			    var pull        = $('#pull');
+			        menu        = $('nav ul');
+			        menuHeight  = menu.height();
+			 
+			    $(pull).on('click', function(e) {
+			        e.preventDefault();
+			        menu.slideToggle();
+			    });
+			});
+			$(window).resize(function(){
+			    var w = $(window).width();
+			    if(w > 320 && menu.is(':hidden')) {
+			        menu.removeAttr('style');
+			    }
+			}); 
+		</script>
+	</body>
+</html>

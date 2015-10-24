@@ -10,7 +10,7 @@
 
 		<!-- LightSlider -->
 		<link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
 		<script src="js/lightslider.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 
@@ -19,38 +19,99 @@
 	<body>
 		<header>
 			<nav class="clearfix">
-				<a href="#" id="logo">Logo</a>
+				<a href="index.html" id="logo">Logo</a>
 				<a href="#links" id="pull"><i class="fa fa-bars fa-2x"></i></a>
 		    <ul class="clearfix" id="links">
-		        <li><a href="list-pages.html">Facilities</a></li>
-		        <li><a href="multi-card.html">Brokers</a></li>
-		        <li><a href="list-pages.html">Listings</a></li>
-		        <li><a href="#">Members</a></li>
+		        <li><a href="list-pages.html"><span>Facilities</span></a></li>
+		        <li><a href="multi-card.html"><span>Brokers</span></a></li>
+		        <li><a href="multi-card.html"><span>Brokers</span></a></li>
+		        <li><a href="list-pages.html"><span>Business Opportunities</span></a></li>
+		        <li><a href="#"><span>Members</span></a></li>
 		    </ul>
 			</nav>
-		</header>
-		<main>
-			<div class="row">
+			<!-- header.php ends here -->
+			<div class="row" style="margin-top:80px;">
 				<div class="twelve columns slider">
 					<ul id="autoWidth" class="cs-hidden">
-					  <li class="slider-item" style="background-image: url('img/fff.png'); background-size:cover; background-position: center center; height:inherit;"><a href="#"></a></li>
-					  <li class="slider-item" style="background-image: url('img/fff.png'); background-size:cover; background-position: center center; height:inherit;"><a href="#"></a></li>
-					  <li class="slider-item" style="background-image: url('img/fff.png'); background-size:cover; background-position: center center; height:inherit;"><a href="#"></a></li>
-					  <li class="slider-item" style="background-image: url('img/fff.png'); background-size:cover; background-position: center center; height:inherit;"><a href="#"></a></li>
-					  <li class="slider-item" style="background-image: url('img/fff.png'); background-size:cover; background-position: center center; height:inherit;"><a href="#"></a></li>
-					  <!-- <li class="slider-item"><img src="http://lorempixel.com/1356/765/sports/Dummy-Text" width="100%"></li>
-					  <li class="slider-item"><img src="http://lorempixel.com/1356/765/sports/Dummy-Text" width="100%"></li>
-					  <li class="slider-item"><img src="http://lorempixel.com/1356/765/sports/Dummy-Text" width="100%"></li>
-					  <li class="slider-item"><img src="http://lorempixel.com/1356/765/sports/Dummy-Text" width="100%"></li> -->
+					  <li class="slider-item" style="background-image: url('img/fff.png'); background-size:cover; background-position: center center; height:inherit;"><a href="content-single.html" style="display:block; width: 100%; height:100%;"></a></li>
+					  <li class="slider-item" style="background-image: url('img/fff.png'); background-size:cover; background-position: center center; height:inherit;"><a href="content-single.html" style="display:block; width: 100%; height:100%;"></a></li>
+					  <li class="slider-item" style="background-image: url('img/fff.png'); background-size:cover; background-position: center center; height:inherit;"><a href="content-single.html" style="display:block; width: 100%; height:100%;"></a></li>
+					  <li class="slider-item" style="background-image: url('img/fff.png'); background-size:cover; background-position: center center; height:inherit;"><a href="content-single.html" style="display:block; width: 100%; height:100%;"></a></li>
+					  <li class="slider-item" style="background-image: url('img/fff.png'); background-size:cover; background-position: center center; height:inherit;"><a href="content-single.html" style="display:block; width: 100%; height:100%;"></a></li>
 					</ul>
 				</div>
 			</div>
-			
-			<div class="container lgv_featureboxes">
+		</header>
+		<main class="container">
+			<div class="lgv_news">
+				<h1>News</h1>
+				<div class="lgv_recentEvents">
+					<img src="img/fff.png" width="100%">
+					<h2>Insert Title Here</h2>
+				</div>
+				<div class="lgv_recentEventsList">
+					<h2>Events Recap</h2>
+					<ul class="no-list-style">
+						<li>
+							<a href="#">
+								<span style="margin-bottom:10px;"><strong>Insert Title Here</strong></span>
+							</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+							<a href="#" class="read_more">Read More...</a>
+						</li>
+						<li>
+							<a href="#">
+								<span style="margin-bottom:10px;"><strong>Insert Title Here</strong></span>
+							</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+							<a href="#" class="read_more">Read More...</a>
+						</li>
+						<li>
+							<a href="#">
+								<span style="margin-bottom:10px;"><strong>Insert Title Here</strong></span>
+							</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+							<a href="#" class="read_more">Read More...</a>
+						</li>
+						<li>
+							<a href="#">
+								<span style="margin-bottom:10px;"><strong>Insert Title Here</strong></span>
+							</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+							<a href="#" class="read_more">Read More...</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<hr />
+			<div class="lgv_links">
+				<div class="lgv_links__hotlines">
+					<h2>Important Numbers</h2>
+					<dl>
+						<dt><strong>Service 1</strong></dt>
+							<dd>(02) 9xx-xxxx</dd>
+						<dt><strong>Service 2</strong></dt>
+							<dd>(02) 9xx-xxxx</dd>
+						<dt><strong>Service 3</strong></dt>
+							<dd>(02) 9xx-xxxx</dd>
+						<dt><strong>Service 4</strong></dt>
+							<dd>(02) 9xx-xxxx</dd>
+						<dt><strong>Service 5</strong></dt>
+							<dd>(02) 9xx-xxxx</dd>
+						<dt><strong>Service 6</strong></dt>
+							<dd>(02) 9xx-xxxx</dd>
+					</dl>
+				</div>
+				<div class="lgv_links__ads">
+					<h2>Advertisments</h2>
+					<img src="img/fff.png" width="100%">
+				</div>
+			</div>
+			<!-- <div class="lgv_featureboxes">
 				<div class="row">
-					<div class="four columns lgv_featurebox">
-						<h1 class="lgv_featurebox-header">Listings</h1>
-						<ul class="lgv_featurebox-list">
+					<div class="four columns lgv_featurebox__item">
+						<h1 class="lgv_featurebox__item-header">Listings</h1>
+						<ul class="lgv_featurebox__item-list">
 							<li><a href="#"><p><b>Listing #</b></p><span>Some detail here</span></a></li>
 							<li><a href="#"><p><b>Listing #</b></p><span>Some detail here</span></a></li>
 							<li><a href="#"><p><b>Listing #</b></p><span>Some detail here</span></a></li>
@@ -58,9 +119,9 @@
 							<li><a href="#"><p><b>Listing #</b></p><span>Some detail here</span></a></li>
 						</ul>
 					</div>
-					<div class="four columns lgv_featurebox">
-						<h1 class="lgv_featurebox-header">Listings</h1>
-						<ul class="lgv_featurebox-list">
+					<div class="four columns lgv_featurebox__item">
+						<h1 class="lgv_featurebox__item-header">Listings</h1>
+						<ul class="lgv_featurebox__item-list">
 							<li><a href="#"><p><b>Listing #</b></p><span>Some detail here</span></a></li>
 							<li><a href="#"><p><b>Listing #</b></p><span>Some detail here</span></a></li>
 							<li><a href="#"><p><b>Listing #</b></p><span>Some detail here</span></a></li>
@@ -68,9 +129,9 @@
 							<li><a href="#"><p><b>Listing #</b></p><span>Some detail here</span></a></li>
 						</ul>
 					</div>
-					<div class="four columns lgv_featurebox">
-						<h1 class="lgv_featurebox-header">Listings</h1>
-						<ul class="lgv_featurebox-list">
+					<div class="four columns lgv_featurebox__item">
+						<h1 class="lgv_featurebox__item-header">Listings</h1>
+						<ul class="lgv_featurebox__item-list">
 							<li><a href="#"><p><b>Listing #</b></p><span>Some detail here</span></a></li>
 							<li><a href="#"><p><b>Listing #</b></p><span>Some detail here</span></a></li>
 							<li><a href="#"><p><b>Listing #</b></p><span>Some detail here</span></a></li>
@@ -79,7 +140,7 @@
 						</ul>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</main>
 		<footer>
 			<div class="container">
