@@ -1,13 +1,17 @@
- $(document).ready(function() {
-    $('#autoWidth').lightSlider({
-    	auto:true,
-        item:1,
-    	// gallery:true,
-    	speed:1500,
-    	pause:5000,
-        loop:true,
-        onSliderLoad: function() {
-            $('#autoWidth').removeClass('cS-hidden');
-        } 
-    });  
-  });
+$(function() {
+    var pull        = $('#pull');
+    menu        = $('nav ul');
+    menuHeight  = menu.height();
+
+    $(pull).on('click', function(e) {
+        e.preventDefault();
+        console.log("hello");
+        menu.slideToggle();
+    });
+});
+$(window).resize(function(){
+    var w = $(window).width();
+    if(w > 320 && menu.is(':hidden')) {
+        menu.removeAttr('style');
+    }
+});
